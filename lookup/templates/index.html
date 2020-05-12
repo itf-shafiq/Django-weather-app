@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="jumbotron {{ category_color }} ">
+    <h1 class="display-4">{{ data.0.Category.Name }}</h1>
+    <p class="lead">{{ data.0.ReportingArea }}: Air Quality:   {{ data.0.AQI }} </p>
+    <hr class="my-4">
+    <p>{{ category_description }}</p>
+  </div>
+
+
+{%endblock%}
